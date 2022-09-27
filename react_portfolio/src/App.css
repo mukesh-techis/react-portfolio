@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 20px;
+    padding: 0;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1-tag span {
+    color: #00ABAE;
+}
+
+.list-nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list-nav li {
+    list-style: none;
+}
+
+.list-nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+    font-size: 0.8em;
+    display: block;
+}
+
+/******** div.bio *********/
+.bio {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.bio .name {
+    font-size: 3em;
+}
+
+.bio .name span {
+    font-weight: bold;
+}
+
+button.github {
+    background: #00ABAE;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 25%;
+    border-radius: 4px;
+    margin-right: 3%;
+}
+
+img.profile {
+    width: 35%;
+    border-radius: 50%;
+    border: 15px solid #00ABAE;
+}
+
+.what-i-do {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.what-i-do p {
+    color: #575757;
+    font-size: 0.8em;
+    padding: 20px;
+    line-height: 2;
+}
+
+.what-i-do span {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+img.icons {
+    width: 7%;
+}
+
+/************ projects *********/
+.twitter {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.project-1 p {
+    color: #575757;
+    font-size: 0.8em;
+    padding: 20px;
+    line-height: 2;
+}
+
+.project-1 .pro-span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pro-span-2 {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.twitter img {
+    width: 40%;
+}
+
+.project-1 {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 7%;
+}
+
+footer p {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+p.copy {
+    font-size: 0.9em;
+}
+
+/************ media Query *************/
+
+@media screen and (max-width:540px) {
+
+    * {
+        font-size: 0.9em;
+    }
+
+    .h1-tag {
+        font-size: 0.7em;
+    }
+
+    nav.navbar {
+        font-size: 1.5em;
+    }
+
+    .navbar span {
+        font-size: 1.1em;
+    }
+
+    .list-nav {
+        font-size: 1em;
+    }
+
+    button.github {
+        background: #00ABAE;
+        color: white;
+        border: none;
+        padding: 6px;
+        width: 35%;
+        border-radius: 2px;
+        margin-right: 3%;
+        font-size: 1.2em;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bio-name {
+        font-size: 0.7em;
+    }
+
+    .bio .name span {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    img.profile {
+        width: 90%;
+        border-radius: 50%;
+        border: 5px solid #00ABAE;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .what-i-do {
+        display: flex;
+        margin-bottom: 5%;
+        flex-direction: column;
+    }
+
+    .what-i-do p {
+        color: #575757;
+        font-size: 1.3em;
+        line-height: 2;
+        padding: 0;
+    }
+
+    .my-skills {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    img.icons {
+        width: 50%;
+        margin: 5px auto;
+    }
+
+    .twitter {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .twitter img {
+        width: 100%;
+    }
+
+    .project-1 {
+        width: 100%;
+    }
+
+    .project-1 p {
+        color: #575757;
+        font-size: 1.7em;
+        padding: 20px 0;
+        line-height: 2;
+    }
+
+    footer img {
+        width: 7%;
+    }
+}
+
+@media screen and (max-width:600px) {}
+
+@media screen and (max-width:920px) and (min-width:540px) {
+    * {
+        font-size: 0.9em;
+    }
+
+    .h1-tag {
+        font-size: 0.9em;
+    }
+
+    nav.navbar {
+        font-size: 2em;
+    }
+
+    .navbar span {
+        font-size: 1.2em;
+    }
+
+    .list-nav {
+        font-size: 1.3em;
+    }
+
+    button.github {
+        background: #00ABAE;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 25%;
+        border-radius: 3px;
+        margin-right: 3%;
+        font-size: 1.5em;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .bio-name {
+        font-size: 1.2em;
+    }
+
+    .bio .name span {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    img.profile {
+        width: 70%;
+        border-radius: 50%;
+        border: 10px solid #00ABAE;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .what-i-do {
+        display: flex;
+        margin-bottom: 5%;
+        flex-direction: column;
+    }
+
+    .what-i-do p {
+        color: #575757;
+        font-size: 1.3em;
+        line-height: 2;
+        padding: 0;
+    }
+
+    .twitter {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    .twitter img {
+        width: 100%;
+    }
+
+    .project-1 {
+        width: 100%;
+    }
+
+    .project-1 p {
+        color: #575757;
+        font-size: 1.8em;
+        padding: 20px 0;
+        line-height: 2;
+    }
+
+    footer img {
+        width: 7%;
+    }
+
+}
